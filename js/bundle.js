@@ -44,15 +44,28 @@ function addFrame () {
 
 addFrame();
 
-function addKeyboard (keyboard) {
-  for (let i = 1; i <= 64; i++) {
+async function addKeyboard (keyboard) {
+  const imgHelp = './key.json';
+  const res = await fetch(imgHelp);
+  const dataKey = await res.json();
+
+  for (let i = 0; i < 64; i++) {
     const addDiv = document.createElement('div');
+    const addSpan = document.createElement('span');
     addDiv.className = `key key${i}`;
-    addDiv.innerText = `${i}`;
+    addSpan.className = `key__span key__span${i}`;
+    addSpan.innerText = `${dataKey[i].load}`;
+    addDiv.appendChild(addSpan);
     keyboard.appendChild(addDiv);
   }
 }
 
-document.querySelector('body').addEventListener('keydown', (event) => {
-  console.log(event);
+// const obj = {};
+
+window.addEventListener('keydown', (event) => {
+  const textareaEntry = document.querySelector('#textarea');
+  textareaEntry.innerHTML = textareaEntry.innerHTML + event.key + '\t';
+  // obj[event.code] = event.key;
+  // console.log(obj);
+  // console.log(event);
 });
