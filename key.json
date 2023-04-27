@@ -1,258 +1,982 @@
 [
   {
-    "load": "`",
+    "load": {
+      "key": "`",
+      "keyUp": "~",
+      "keyShift": "~",
+      "keyCaps": "`"
+    },
+    "loadRu": {
+      "key": "ё",
+      "keyUp": "Ё",
+      "keyShift": "Ё",
+      "keyCaps": "Ё"
+    },
     "Backquote": "`"
   },
   {
-    "load": "0",
-    "Digit0": "0"
-  },
-  {
-    "load": "1",
+    "load": {
+      "key": "1",
+      "keyUp": "!",
+      "keyShift": "!",
+      "keyCaps": "1"
+    },
+    "loadRu": {
+      "key": "1",
+      "keyUp": "!",
+      "keyShift": "!",
+      "keyCaps": "1"
+    },
     "Digit1": "1"
   },
   {
-    "load": "2",
+    "load": {
+      "key": "2",
+      "keyUp": "@",
+      "keyShift": "@",
+      "keyCaps": "2"
+    },
+    "loadRu": {
+      "key": "2",
+      "keyUp": "\"",
+      "keyShift": "\"",
+      "keyCaps": "2"
+    },
     "Digit2": "2"
   },
   {
-    "load": "3",
+    "load": {
+      "key": "3",
+      "keyUp": "#",
+      "keyShift": "#",
+      "keyCaps": "3"
+    },
+    "loadRu": {
+      "key": "3",
+      "keyUp": "№",
+      "keyShift": "№",
+      "keyCaps": "3"
+    },
     "Digit3": "3"
   },
   {
-    "load": "4",
+    "load": {
+      "key": "4",
+      "keyUp": "$",
+      "keyShift": "$",
+      "keyCaps": "4"
+    },
+    "loadRu": {
+      "key": "4",
+      "keyUp": ";",
+      "keyShift": ";",
+      "keyCaps": "4"
+    },
     "Digit4": "4"
   },
   {
-    "load": "5",
+    "load": {
+      "key": "5",
+      "keyUp": "%",
+      "keyShift": "%",
+      "keyCaps": "5"
+    },
+    "loadRu": {
+      "key": "5",
+      "keyUp": "%",
+      "keyShift": "%",
+      "keyCaps": "5"
+    },
     "Digit5": "5"
   },
   {
-    "load": "6",
+    "load": {
+      "key": "6",
+      "keyUp": "^",
+      "keyShift": "^",
+      "keyCaps": "6"
+    },
+    "loadRu": {
+      "key": "6",
+      "keyUp": ":",
+      "keyShift": ":",
+      "keyCaps": "6"
+    },
     "Digit6": "6"
   },
   {
-    "load": "7",
+    "load": {
+      "key": "7",
+      "keyUp": "?",
+      "keyShift": "?",
+      "keyCaps": "7"
+    },
+    "loadRu": {
+      "key": "7",
+      "keyUp": "&",
+      "keyShift": "&",
+      "keyCaps": "7"
+    },
     "Digit7": "7"
   },
   {
-    "load": "8",
+    "load": {
+      "key": "8",
+      "keyUp": "*",
+      "keyShift": "*",
+      "keyCaps": "8"
+    },
+    "loadRu": {
+      "key": "8",
+      "keyUp": "*",
+      "keyShift": "*",
+      "keyCaps": "8"
+    },
     "Digit8": "8"
   },
   {
-    "load": "9",
+    "load": {
+      "key": "9",
+      "keyUp": "(",
+      "keyShift": "(",
+      "keyCaps": "9"
+    },
+    "loadRu": {
+      "key": "9",
+      "keyUp": "(",
+      "keyShift": "(",
+      "keyCaps": "9"
+    },
     "Digit9": "9"
   },
   {
-    "load": "=",
-    "Equal": "="
+    "load": {
+      "key": "0",
+      "keyUp": ")",
+      "keyShift": ")",
+      "keyCaps": "0"
+    },
+    "loadRu": {
+      "key": "0",
+      "keyUp": ")",
+      "keyShift": ")",
+      "keyCaps": "0"
+    },
+    "Digit0": "0"
   },
   {
-    "load": "-",
+    "load": {
+      "key": "-",
+      "keyUp": "_",
+      "keyShift": "_",
+      "keyCaps": "-"
+    },
+    "loadRu": {
+      "key": "-",
+      "keyUp": "_",
+      "keyShift": "_",
+      "keyCaps": "-"
+    },
     "Minus": "-"
   },
   {
-    "load": "Backspace",
+    "load": {
+      "key": "=",
+      "keyUp": "+",
+      "keyShift": "+",
+      "keyCaps": "="
+    },
+    "loadRu": {
+      "key": "=",
+      "keyUp": "+",
+      "keyShift": "+",
+      "keyCaps": "="
+    },
+    "Equal": "="
+  },
+  {
+    "load": {
+      "key": "Backspace",
+      "keyUp": "Backspace",
+      "keyShift": "Backspace",
+      "keyCaps": "Backspace"
+    },
+    "loadRu": {
+      "key": "Backspace",
+      "keyUp": "Backspace",
+      "keyShift": "Backspace",
+      "keyCaps": "Backspace"
+    },
     "Backspace": "Backspace"
   },
   {
-    "load": "Tab",
+    "load": {
+      "key": "Tab",
+      "keyUp": "Tab",
+      "keyShift": "Tab",
+      "keyCaps": "Tab"
+    },
+    "loadRu": {
+      "key": "Tab",
+      "keyUp": "Tab",
+      "keyShift": "Tab",
+      "keyCaps": "Tab"
+    },
     "Tab": "Tab"
   },
   {
-    "load": "q",
+    "load": {
+      "key": "q",
+      "keyUp": "Q",
+      "keyShift": "Q",
+      "keyCaps": "Q"
+    },
+    "loadRu": {
+      "key": "й",
+      "keyUp": "Й",
+      "keyShift": "Й",
+      "keyCaps": "Й"
+    },
     "KeyQ": "q"
   },
   {
-    "load": "w",
+    "load": {
+      "key": "w",
+      "keyUp": "W",
+      "keyShift": "W",
+      "keyCaps": "W"
+    },
+    "loadRu": {
+      "key": "ц",
+      "keyUp": "Ц",
+      "keyShift": "Ц",
+      "keyCaps": "Ц"
+    },
     "KeyW": "w"
   },
   {
-    "load": "e",
+    "load": {
+      "key": "e",
+      "keyUp": "E",
+      "keyShift": "E",
+      "keyCaps": "E"
+    },
+    "loadRu": {
+      "key": "у",
+      "keyUp": "У",
+      "keyShift": "У",
+      "keyCaps": "У"
+    },
     "KeyE": "e"
   },
   {
-    "load": "r",
+    "load": {
+      "key": "r",
+      "keyUp": "R",
+      "keyShift": "R",
+      "keyCaps": "R"
+    },
+    "loadRu": {
+      "key": "к",
+      "keyUp": "К",
+      "keyShift": "К",
+      "keyCaps": "К"
+    },
     "KeyR": "r"
   },
   {
-    "load": "t",
+    "load": {
+      "key": "t",
+      "keyUp": "T",
+      "keyShift": "T",
+      "keyCaps": "T"
+    },
+    "loadRu": {
+      "key": "е",
+      "keyUp": "Е",
+      "keyShift": "Е",
+      "keyCaps": "Е"
+    },
     "KeyT": "t"
   },
   {
-    "load": "y",
+    "load": {
+      "key": "y",
+      "keyUp": "Y",
+      "keyShift": "Y",
+      "keyCaps": "Y"
+    },
+    "loadRu": {
+      "key": "н",
+      "keyUp": "Н",
+      "keyShift": "Н",
+      "keyCaps": "Н"
+    },
     "KeyY": "y"
   },
   {
-    "load": "u",
+    "load": {
+      "key": "u",
+      "keyUp": "U",
+      "keyShift": "U",
+      "keyCaps": "U"
+    },
+    "loadRu": {
+      "key": "г",
+      "keyUp": "Г",
+      "keyShift": "Г",
+      "keyCaps": "Г"
+    },
     "KeyU": "u"
   },
   {
-    "load": "i",
+    "load": {
+      "key": "i",
+      "keyUp": "I",
+      "keyShift": "I",
+      "keyCaps": "I"
+    },
+    "loadRu": {
+      "key": "ш",
+      "keyUp": "Ш",
+      "keyShift": "Ш",
+      "keyCaps": "Ш"
+    },
     "KeyI": "i"
   },
   {
-    "load": "o",
+    "load": {
+      "key": "o",
+      "keyUp": "O",
+      "keyShift": "O",
+      "keyCaps": "O"
+    },
+    "loadRu": {
+      "key": "щ",
+      "keyUp": "Щ",
+      "keyShift": "Щ",
+      "keyCaps": "Щ"
+    },
     "KeyO": "o"
   },
   {
-    "load": "p",
+    "load": {
+      "key": "p",
+      "keyUp": "P",
+      "keyShift": "P",
+      "keyCaps": "P"
+    },
+    "loadRu": {
+      "key": "з",
+      "keyUp": "З",
+      "keyShift": "З",
+      "keyCaps": "З"
+    },
     "KeyP": "p"
   },
   {
-    "load": "[",
+    "load": {
+      "key": "[",
+      "keyUp": "{",
+      "keyShift": "{",
+      "keyCaps": "{"
+    },
+    "loadRu": {
+      "key": "х",
+      "keyUp": "Х",
+      "keyShift": "Х",
+      "keyCaps": "Х"
+    },
     "BracketLeft": "["
   },
   {
-    "load": "]",
+    "load": {
+      "key": "]",
+      "keyUp": "}",
+      "keyShift": "}",
+      "keyCaps": "}"
+    },
+    "loadRu": {
+      "key": "ъ",
+      "keyUp": "Ъ",
+      "keyShift": "Ъ",
+      "keyCaps": "Ъ"
+    },
     "BracketRight": "]"
   },
   {
-    "load": "\\",
-    "Backspace": "\\"
+    "load": {
+      "key": "\\",
+      "keyUp": "|",
+      "keyShift": "|",
+      "keyCaps": "\\"
+    },
+    "loadRu": {
+      "key": "\\",
+      "keyUp": "/",
+      "keyShift": "/",
+      "keyCaps": "\\"
+    },
+    "Backslash": "\\"
   },
   {
-    "load": "Del",
-    "KeyA": "Delete"
+    "load": {
+      "key": "Del",
+      "keyUp": "Del",
+      "keyShift": "Del",
+      "keyCaps": "Del"
+    },
+    "loadRu": {
+      "key": "Del",
+      "keyUp": "Del",
+      "keyShift": "Del",
+      "keyCaps": "Del"
+    },
+    "Delete": "Delete"
   },
   {
-    "load": "CapsLock",
+    "load": {
+      "key": "CapsLock",
+      "keyUp": "CapsLock",
+      "keyShift": "CapsLock",
+      "keyCaps": "CapsLock"
+    },
+    "loadRu": {
+      "key": "CapsLock",
+      "keyUp": "CapsLock",
+      "keyShift": "CapsLock",
+      "keyCaps": "CapsLock"
+    },
     "CapsLock": "CapsLock"
   },
   {
-    "load": "a",
+    "load": {
+      "key": "a",
+      "keyUp": "A",
+      "keyShift": "A",
+      "keyCaps": "A"
+    },
+    "loadRu": {
+      "key": "ф",
+      "keyUp": "Ф",
+      "keyShift": "Ф",
+      "keyCaps": "Ф"
+    },
     "KeyA": "a"
   },
   {
-    "load": "s",
+    "load": {
+      "key": "s",
+      "keyUp": "S",
+      "keyShift": "S",
+      "keyCaps": "S"
+    },
+    "loadRu": {
+      "key": "ы",
+      "keyUp": "Ы",
+      "keyShift": "Ы",
+      "keyCaps": "Ы"
+    },
     "KeyS": "s"
   },
   {
-    "load": "d",
+    "load": {
+      "key": "d",
+      "keyUp": "D",
+      "keyShift": "D",
+      "keyCaps": "D"
+    },
+    "loadRu": {
+      "key": "в",
+      "keyUp": "В",
+      "keyShift": "В",
+      "keyCaps": "В"
+    },
     "KeyD": "d"
   },
   {
-    "load": "f",
+    "load": {
+      "key": "f",
+      "keyUp": "F",
+      "keyShift": "F",
+      "keyCaps": "F"
+    },
+    "loadRu": {
+      "key": "а",
+      "keyUp": "А",
+      "keyShift": "А",
+      "keyCaps": "А"
+    },
     "KeyF": "f"
   },
   {
-    "load": "g",
+    "load": {
+      "key": "g",
+      "keyUp": "G",
+      "keyShift": "G",
+      "keyCaps": "G"
+    },
+    "loadRu": {
+      "key": "п",
+      "keyUp": "П",
+      "keyShift": "П",
+      "keyCaps": "П"
+    },
     "KeyG": "g"
   },
   {
-    "load": "h",
+    "load": {
+      "key": "h",
+      "keyUp": "H",
+      "keyShift": "H",
+      "keyCaps": "H"
+    },
+    "loadRu": {
+      "key": "р",
+      "keyUp": "Р",
+      "keyShift": "Р",
+      "keyCaps": "Р"
+    },
     "KeyH": "h"
   },
   {
-    "load": "j",
+    "load": {
+      "key": "j",
+      "keyUp": "J",
+      "keyShift": "J",
+      "keyCaps": "J"
+    },
+    "loadRu": {
+      "key": "о",
+      "keyUp": "О",
+      "keyShift": "О",
+      "keyCaps": "О"
+    },
     "KeyJ": "j"
   },
   {
-    "load": "k",
+    "load": {
+      "key": "k",
+      "keyUp": "K",
+      "keyShift": "K",
+      "keyCaps": "K"
+    },
+    "loadRu": {
+      "key": "л",
+      "keyUp": "Л",
+      "keyShift": "Л",
+      "keyCaps": "Л"
+    },
     "KeyK": "k"
   },
   {
-    "load": "l",
+    "load": {
+      "key": "l",
+      "keyUp": "L",
+      "keyShift": "L",
+      "keyCaps": "L"
+    },
+    "loadRu": {
+      "key": "д",
+      "keyUp": "Д",
+      "keyShift": "Д",
+      "keyCaps": "Д"
+    },
     "KeyL": "l"
   },
   {
-    "load": ";",
+    "load": {
+      "key": ";",
+      "keyUp": ":",
+      "keyShift": ":",
+      "keyCaps": ";"
+    },
+    "loadRu": {
+      "key": "ж",
+      "keyUp": "Ж",
+      "keyShift": "Ж",
+      "keyCaps": "Ж"
+    },
     "Semicolon": ";"
   },
   {
-    "load": "'",
+    "load": {
+      "key": "'",
+      "keyUp": "\"",
+      "keyShift": "\"",
+      "keyCaps": "'"
+    },
+    "loadRu": {
+      "key": "э",
+      "keyUp": "Э",
+      "keyShift": "Э",
+      "keyCaps": "Э"
+    },
     "Quote": "'"
   },
   {
-    "load": "Enter",
+    "load": {
+      "key": "Enter",
+      "keyUp": "Enter",
+      "keyShift": "Enter",
+      "keyCaps": "Enter"
+    },
+    "loadRu": {
+      "key": "Enter",
+      "keyUp": "Enter",
+      "keyShift": "Enter",
+      "keyCaps": "Enter"
+    },
     "Enter": "Enter"
   },
   {
-    "load": "Shift",
+    "load": {
+      "key": "Shift",
+      "keyUp": "Shift",
+      "keyShift": "Shift",
+      "keyCaps": "Shift"
+    },
+    "loadRu": {
+      "key": "Shift",
+      "keyUp": "Shift",
+      "keyShift": "Shift",
+      "keyCaps": "Shift"
+    },
     "ShiftLeft": "Shift"
   },
   {
-    "load": "z",
+    "load": {
+      "key": "z",
+      "keyUp": "Z",
+      "keyShift": "Z",
+      "keyCaps": "Z"
+    },
+    "loadRu": {
+      "key": "я",
+      "keyUp": "Я",
+      "keyShift": "Я",
+      "keyCaps": "Я"
+    },
     "KeyZ": "z"
   },
   {
-    "load": "x",
+    "load": {
+      "key": "x",
+      "keyUp": "X",
+      "keyShift": "X",
+      "keyCaps": "X"
+    },
+    "loadRu": {
+      "key": "ч",
+      "keyUp": "Ч",
+      "keyShift": "Ч",
+      "keyCaps": "Ч"
+    },
     "KeyX": "x"
   },
   {
-    "load": "c",
+    "load": {
+      "key": "c",
+      "keyUp": "C",
+      "keyShift": "C",
+      "keyCaps": "C"
+    },
+    "loadRu": {
+      "key": "с",
+      "keyUp": "С",
+      "keyShift": "С",
+      "keyCaps": "С"
+    },
     "KeyC": "c"
   },
   {
-    "load": "v",
+    "load": {
+      "key": "v",
+      "keyUp": "V",
+      "keyShift": "V",
+      "keyCaps": "V"
+    },
+    "loadRu": {
+      "key": "м",
+      "keyUp": "М",
+      "keyShift": "М",
+      "keyCaps": "М"
+    },
     "KeyV": "v"
   },
   {
-    "load": "b",
+    "load": {
+      "key": "b",
+      "keyUp": "B",
+      "keyShift": "B",
+      "keyCaps": "B"
+    },
+    "loadRu": {
+      "key": "и",
+      "keyUp": "И",
+      "keyShift": "И",
+      "keyCaps": "И"
+    },
     "KeyB": "b"
   },
   {
-    "load": "n",
+    "load": {
+      "key": "n",
+      "keyUp": "N",
+      "keyShift": "N",
+      "keyCaps": "N"
+    },
+    "loadRu": {
+      "key": "т",
+      "keyUp": "Т",
+      "keyShift": "Т",
+      "keyCaps": "Т"
+    },
     "KeyN": "n"
   },
   {
-    "load": "m",
+    "load": {
+      "key": "m",
+      "keyUp": "M",
+      "keyShift": "M",
+      "keyCaps": "M"
+    },
+    "loadRu": {
+      "key": "ь",
+      "keyUp": "Ь",
+      "keyShift": "Ь",
+      "keyCaps": "Ь"
+    },
     "KeyM": "m"
   },
   {
-    "load": ",",
+    "load": {
+      "key": ",",
+      "keyUp": "<",
+      "keyShift": "<",
+      "keyCaps": ","
+    },
+    "loadRu": {
+      "key": "б",
+      "keyUp": "Б",
+      "keyShift": "Б",
+      "keyCaps": "Б"
+    },
     "Comma": ","
   },
   {
-    "load": ".",
+    "load": {
+      "key": ".",
+      "keyUp": ">",
+      "keyShift": ">",
+      "keyCaps": "."
+    },
+    "loadRu": {
+      "key": "ю",
+      "keyUp": "Ю",
+      "keyShift": "Ю",
+      "keyCaps": "Ю"
+    },
     "Period": "."
   },
   {
-    "load": "/",
+    "load": {
+      "key": "/",
+      "keyUp": "?",
+      "keyShift": "?",
+      "keyCaps": "/"
+    },
+    "loadRu": {
+      "key": ".",
+      "keyUp": ",",
+      "keyShift": ",",
+      "keyCaps": "."
+    },
     "Slash": "/"
   },
   {
-    "load": "⯅",
+    "load": {
+      "key": "⯅",
+      "keyUp": "⯅",
+      "keyShift": "⯅",
+      "keyCaps": "⯅"
+    },
+    "loadRu": {
+      "key": "⯅",
+      "keyUp": "⯅",
+      "keyShift": "⯅",
+      "keyCaps": "⯅"
+    },
     "ArrowUp": "ArrowUp"
   },
   {
-    "load": "Shift",
+    "load": {
+      "key": "Shift",
+      "keyUp": "Shift",
+      "keyShift": "Shift",
+      "keyCaps": "Shift"
+    },
+    "loadRu": {
+      "key": "Shift",
+      "keyUp": "Shift",
+      "keyShift": "Shift",
+      "keyCaps": "Shift"
+    },
     "ShiftRight": "Shift"
   },
   {
-    "load": "Ctrl",
+    "load": {
+      "key": "Ctrl",
+      "keyUp": "Ctrl",
+      "keyShift": "Ctrl",
+      "keyCaps": "Ctrl"
+    },
+    "loadRu": {
+      "key": "Ctrl",
+      "keyUp": "Ctrl",
+      "keyShift": "Ctrl",
+      "keyCaps": "Ctrl"
+    },
     "ControlLeft": "Control"
   },
   {
-    "load": "Win",
+    "load": {
+      "key": "Win",
+      "keyUp": "Win",
+      "keyShift": "Win",
+      "keyCaps": "Win"
+    },
+    "loadRu": {
+      "key": "Win",
+      "keyUp": "Win",
+      "keyShift": "Win",
+      "keyCaps": "Win"
+    },
     "MetaLeft": "Meta"
   },
   {
-    "load": "Alt",
+    "load": {
+      "key": "Alt",
+      "keyUp": "Alt",
+      "keyShift": "Alt",
+      "keyCaps": "Alt"
+    },
+    "loadRu": {
+      "key": "Alt",
+      "keyUp": "Alt",
+      "keyShift": "Alt",
+      "keyCaps": "Alt"
+    },
     "AltLeft": "Alt"
   },
   {
-    "load": " ",
+    "load": {
+      "key": " ",
+      "keyUp": " ",
+      "keyShift": " ",
+      "keyCaps": " "
+    },
+    "loadRu": {
+      "key": " ",
+      "keyUp": " ",
+      "keyShift": " ",
+      "keyCaps": " "
+    },
     "Space": " "
   },
   {
-    "load": "Alt",
+    "load": {
+      "key": "alt",
+      "keyUp": "alt",
+      "keyShift": "alt",
+      "keyCaps": "alt"
+    },
+    "loadRu": {
+      "key": "alt",
+      "keyUp": "alt",
+      "keyShift": "alt",
+      "keyCaps": "alt"
+    },
     "AltRight": "Alt"
   },
   {
-    "load": "⯇",
+    "load": {
+      "key": "⯇",
+      "keyUp": "⯇",
+      "keyShift": "⯇",
+      "keyCaps": "⯇"
+    },
+    "loadRu": {
+      "key": "⯇",
+      "keyUp": "⯇",
+      "keyShift": "⯇",
+      "keyCaps": "⯇"
+    },
     "ArrowLeft": "ArrowLeft"
   },
   {
-    "load": "⯆",
+    "load": {
+      "key": "⯆",
+      "keyUp": "⯆",
+      "keyShift": "⯆",
+      "keyCaps": "⯆"
+    },
+    "loadRu": {
+      "key": "⯆",
+      "keyUp": "⯆",
+      "keyShift": "⯆",
+      "keyCaps": "⯆"
+    },
     "ArrowDown": "ArrowDown"
   },
   {
-    "load": "⯈",
+    "load": {
+      "key": "⯈",
+      "keyUp": "⯈",
+      "keyShift": "⯈",
+      "keyCaps": "⯈"
+    },
+    "loadRu": {
+      "key": "⯈",
+      "keyUp": "⯈",
+      "keyShift": "⯈",
+      "keyCaps": "⯈"
+    },
     "ArrowRight": "ArrowRight"
   },
   {
-    "load": "Ctrl",
+    "load": {
+      "key": "Ctrl",
+      "keyUp": "Ctrl",
+      "keyShift": "Ctrl",
+      "keyCaps": "Ctrl"
+    },
+    "loadRu": {
+      "key": "Ctrl",
+      "keyUp": "Ctrl",
+      "keyShift": "Ctrl",
+      "keyCaps": "Ctrl"
+    },
+    "ControlRight": "Control"
+  },
+  {
+     "Tab": "\t",
+     "Enter": "\n",
+    "ArrowUp": "⯅",
+    "ArrowLeft": "⯇",
+    "ArrowDown": "⯆",
+    "ArrowRight": "⯈"
+  },
+  {
+    "Backspace": "Backspace",
+    "Delete": "Delete",
+    "CapsLock": "CapsLock",
+    "ShiftLeft": "Shift",
+    "ShiftRight": "Shift",
+    "ControlLeft": "Control",
+    "MetaLeft": "Meta",
+    "AltLeft": "Alt",
+    "AltRight": "Alt",
     "ControlRight": "Control"
   }
 ]

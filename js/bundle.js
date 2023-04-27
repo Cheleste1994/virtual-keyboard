@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+  // eslint-disable-next-line no-undef
+  localStorage.setItem('lang', 'en');
+});
+
 document.querySelector('body').classList.add('body');
 
 function addFrame () {
@@ -19,6 +24,7 @@ function addFrame () {
         addDiv.className = 'body-entry';
         addTextarea.id = 'textarea';
         addTextarea.className = 'body-entry__textarea';
+        addTextarea.setAttribute('autofocus', '');
         addDiv.appendChild(addTextarea);
         break;
       case i === 3:
@@ -51,21 +57,87 @@ async function addKeyboard (keyboard) {
 
   for (let i = 0; i < 64; i++) {
     const addDiv = document.createElement('div');
-    const addSpan = document.createElement('span');
+    const addSpanEng = document.createElement('span');
+    const addSpanRus = document.createElement('span');
     addDiv.className = `key key${i}`;
-    addSpan.className = `key__span key__span${i}`;
-    addSpan.innerText = `${dataKey[i].load}`;
-    addDiv.appendChild(addSpan);
+    addSpanEng.className = 'key__eng';
+    addDiv.appendChild(addSpanEng);
+    addSpan(addSpanEng, dataKey[i].load);
+    addSpanRus.className = 'key__ru';
+    addDiv.appendChild(addSpanRus);
+    addSpan(addSpanRus, dataKey[i].loadRu);
     keyboard.appendChild(addDiv);
   }
 }
 
-// const obj = {};
+function addSpan (span, dataKey) {
+  const key = document.createElement('span');
+  const keyUp = document.createElement('span');
+  const keyShift = document.createElement('span');
+  const keyCaps = document.createElement('span');
+  key.className = 'key-down';
+  key.innerText = dataKey.key;
+  span.appendChild(key);
 
-window.addEventListener('keydown', (event) => {
+  keyUp.className = 'key-up';
+  keyUp.innerText = dataKey.keyUp;
+  span.appendChild(keyUp);
+
+  keyShift.innerText = dataKey.keyShift;
+  keyShift.className = 'key-shift';
+  span.appendChild(keyShift);
+
+  keyCaps.innerText = dataKey.keyCaps;
+  keyCaps.className = 'key-caps';
+  span.appendChild(keyCaps);
+}
+
+const arrEntry = [];
+
+window.addEventListener('keydown', addDataKey);
+window.addEventListener('keyup', keyNoActive);
+
+async function addDataKey (event) {
+  const imgHelp = './key.json';
+  const res = await fetch(imgHelp);
+  const dataKey = await res.json();
   const textareaEntry = document.querySelector('#textarea');
-  textareaEntry.innerHTML = textareaEntry.innerHTML + event.key + '\t';
-  // obj[event.code] = event.key;
-  // console.log(obj);
-  // console.log(event);
-});
+  const eventCode = event.code;
+  keyActive(event);
+  if (dataKey[64][eventCode]) {
+    arrEntry.push(dataKey[64][eventCode]);
+    window.addEventListener('keydown', stopDefAction);
+  } else if (dataKey[65][eventCode]) {
+    arrEntry.push(dataKey[64][eventCode]);
+    window.addEventListener('keydown', stopDefAction);
+  } else {
+    arrEntry.push(dataKey[64][eventCode] || dataKey[65][eventCode] ? '' : event.key);
+  }
+  textareaEntry.innerHTML = arrEntry.join('');
+}
+
+function stopDefAction (evt) {
+  evt.preventDefault();
+}
+
+function keyActive (event) {
+  const keyBtn = document.querySelectorAll('.key__eng');
+  keyBtn.forEach(x => {
+    if (x.firstChild.innerText === event.key) {
+      x.classList.add('key-active');
+    } else if (x.firstChild.innerText === 'Del' && event.key === 'Delete') {
+      x.classList.add('key-active');
+    }
+  });
+}
+
+function keyNoActive (event) {
+  const keyBtn = document.querySelectorAll('.key__eng');
+  keyBtn.forEach(x => {
+    if (x.firstChild.innerText === event.key) {
+      x.classList.remove('key-active');
+    } else if (x.firstChild.innerText === 'Del' && event.key === 'Delete') {
+      x.classList.remove('key-active');
+    }
+  });
+}
