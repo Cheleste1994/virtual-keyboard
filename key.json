@@ -2,13 +2,13 @@
   {
     "load": {
       "key": "`",
-      "keyUp": "~",
+      "keyUp": "Backquote",
       "keyShift": "~",
       "keyCaps": "`"
     },
     "loadRu": {
       "key": "ё",
-      "keyUp": "Ё",
+      "keyUp": "Backquote",
       "keyShift": "Ё",
       "keyCaps": "Ё"
     },
@@ -17,13 +17,13 @@
   {
     "load": {
       "key": "1",
-      "keyUp": "!",
+      "keyUp": "Digit1",
       "keyShift": "!",
       "keyCaps": "1"
     },
     "loadRu": {
       "key": "1",
-      "keyUp": "!",
+      "keyUp": "Digit1",
       "keyShift": "!",
       "keyCaps": "1"
     },
@@ -32,13 +32,13 @@
   {
     "load": {
       "key": "2",
-      "keyUp": "@",
+      "keyUp": "Digit2",
       "keyShift": "@",
       "keyCaps": "2"
     },
     "loadRu": {
       "key": "2",
-      "keyUp": "\"",
+      "keyUp": "Digit2",
       "keyShift": "\"",
       "keyCaps": "2"
     },
@@ -47,13 +47,13 @@
   {
     "load": {
       "key": "3",
-      "keyUp": "#",
+      "keyUp": "Digit3",
       "keyShift": "#",
       "keyCaps": "3"
     },
     "loadRu": {
       "key": "3",
-      "keyUp": "№",
+      "keyUp": "Digit3",
       "keyShift": "№",
       "keyCaps": "3"
     },
@@ -62,13 +62,13 @@
   {
     "load": {
       "key": "4",
-      "keyUp": "$",
+      "keyUp": "Digit4",
       "keyShift": "$",
       "keyCaps": "4"
     },
     "loadRu": {
       "key": "4",
-      "keyUp": ";",
+      "keyUp": "Digit4",
       "keyShift": ";",
       "keyCaps": "4"
     },
@@ -77,13 +77,13 @@
   {
     "load": {
       "key": "5",
-      "keyUp": "%",
+      "keyUp": "Digit5",
       "keyShift": "%",
       "keyCaps": "5"
     },
     "loadRu": {
       "key": "5",
-      "keyUp": "%",
+      "keyUp": "Digit5",
       "keyShift": "%",
       "keyCaps": "5"
     },
@@ -92,13 +92,13 @@
   {
     "load": {
       "key": "6",
-      "keyUp": "^",
+      "keyUp": "Digit6",
       "keyShift": "^",
       "keyCaps": "6"
     },
     "loadRu": {
       "key": "6",
-      "keyUp": ":",
+      "keyUp": "Digit6",
       "keyShift": ":",
       "keyCaps": "6"
     },
@@ -107,13 +107,13 @@
   {
     "load": {
       "key": "7",
-      "keyUp": "?",
+      "keyUp": "Digit7",
       "keyShift": "?",
       "keyCaps": "7"
     },
     "loadRu": {
       "key": "7",
-      "keyUp": "&",
+      "keyUp": "Digit7",
       "keyShift": "&",
       "keyCaps": "7"
     },
@@ -122,13 +122,13 @@
   {
     "load": {
       "key": "8",
-      "keyUp": "*",
+      "keyUp": "Digit8",
       "keyShift": "*",
       "keyCaps": "8"
     },
     "loadRu": {
       "key": "8",
-      "keyUp": "*",
+      "keyUp": "Digit8",
       "keyShift": "*",
       "keyCaps": "8"
     },
@@ -137,13 +137,13 @@
   {
     "load": {
       "key": "9",
-      "keyUp": "(",
+      "keyUp": "Digit9",
       "keyShift": "(",
       "keyCaps": "9"
     },
     "loadRu": {
       "key": "9",
-      "keyUp": "(",
+      "keyUp": "Digit9",
       "keyShift": "(",
       "keyCaps": "9"
     },
@@ -152,13 +152,13 @@
   {
     "load": {
       "key": "0",
-      "keyUp": ")",
+      "keyUp": "Digit0",
       "keyShift": ")",
       "keyCaps": "0"
     },
     "loadRu": {
       "key": "0",
-      "keyUp": ")",
+      "keyUp": "Digit0",
       "keyShift": ")",
       "keyCaps": "0"
     },
@@ -167,13 +167,13 @@
   {
     "load": {
       "key": "-",
-      "keyUp": "_",
+      "keyUp": "Minus",
       "keyShift": "_",
       "keyCaps": "-"
     },
     "loadRu": {
       "key": "-",
-      "keyUp": "_",
+      "keyUp": "Minus",
       "keyShift": "_",
       "keyCaps": "-"
     },
@@ -182,13 +182,13 @@
   {
     "load": {
       "key": "=",
-      "keyUp": "+",
+      "keyUp": "Equal",
       "keyShift": "+",
       "keyCaps": "="
     },
     "loadRu": {
       "key": "=",
-      "keyUp": "+",
+      "keyUp": "Equal",
       "keyShift": "+",
       "keyCaps": "="
     },
@@ -227,13 +227,13 @@
   {
     "load": {
       "key": "q",
-      "keyUp": "Q",
+      "keyUp": "KeyQ",
       "keyShift": "Q",
       "keyCaps": "Q"
     },
     "loadRu": {
       "key": "й",
-      "keyUp": "Й",
+      "keyUp": "KeyQ",
       "keyShift": "Й",
       "keyCaps": "Й"
     },
@@ -242,13 +242,13 @@
   {
     "load": {
       "key": "w",
-      "keyUp": "W",
+      "keyUp": "KeyW",
       "keyShift": "W",
       "keyCaps": "W"
     },
     "loadRu": {
       "key": "ц",
-      "keyUp": "Ц",
+      "keyUp": "KeyW",
       "keyShift": "Ц",
       "keyCaps": "Ц"
     },
@@ -257,13 +257,13 @@
   {
     "load": {
       "key": "e",
-      "keyUp": "E",
+      "keyUp": "KeyE",
       "keyShift": "E",
       "keyCaps": "E"
     },
     "loadRu": {
       "key": "у",
-      "keyUp": "У",
+      "keyUp": "KeyE",
       "keyShift": "У",
       "keyCaps": "У"
     },
@@ -272,13 +272,13 @@
   {
     "load": {
       "key": "r",
-      "keyUp": "R",
+      "keyUp": "KeyR",
       "keyShift": "R",
       "keyCaps": "R"
     },
     "loadRu": {
       "key": "к",
-      "keyUp": "К",
+      "keyUp": "KeyR",
       "keyShift": "К",
       "keyCaps": "К"
     },
@@ -287,13 +287,13 @@
   {
     "load": {
       "key": "t",
-      "keyUp": "T",
+      "keyUp": "KeyT",
       "keyShift": "T",
       "keyCaps": "T"
     },
     "loadRu": {
       "key": "е",
-      "keyUp": "Е",
+      "keyUp": "KeyT",
       "keyShift": "Е",
       "keyCaps": "Е"
     },
@@ -302,13 +302,13 @@
   {
     "load": {
       "key": "y",
-      "keyUp": "Y",
+      "keyUp": "KeyY",
       "keyShift": "Y",
       "keyCaps": "Y"
     },
     "loadRu": {
       "key": "н",
-      "keyUp": "Н",
+      "keyUp": "KeyY",
       "keyShift": "Н",
       "keyCaps": "Н"
     },
@@ -317,13 +317,13 @@
   {
     "load": {
       "key": "u",
-      "keyUp": "U",
+      "keyUp": "KeyU",
       "keyShift": "U",
       "keyCaps": "U"
     },
     "loadRu": {
       "key": "г",
-      "keyUp": "Г",
+      "keyUp": "KeyU",
       "keyShift": "Г",
       "keyCaps": "Г"
     },
@@ -332,13 +332,13 @@
   {
     "load": {
       "key": "i",
-      "keyUp": "I",
+      "keyUp": "KeyI",
       "keyShift": "I",
       "keyCaps": "I"
     },
     "loadRu": {
       "key": "ш",
-      "keyUp": "Ш",
+      "keyUp": "KeyI",
       "keyShift": "Ш",
       "keyCaps": "Ш"
     },
@@ -347,13 +347,13 @@
   {
     "load": {
       "key": "o",
-      "keyUp": "O",
+      "keyUp": "KeyO",
       "keyShift": "O",
       "keyCaps": "O"
     },
     "loadRu": {
       "key": "щ",
-      "keyUp": "Щ",
+      "keyUp": "KeyO",
       "keyShift": "Щ",
       "keyCaps": "Щ"
     },
@@ -362,13 +362,13 @@
   {
     "load": {
       "key": "p",
-      "keyUp": "P",
+      "keyUp": "KeyP",
       "keyShift": "P",
       "keyCaps": "P"
     },
     "loadRu": {
       "key": "з",
-      "keyUp": "З",
+      "keyUp": "KeyP",
       "keyShift": "З",
       "keyCaps": "З"
     },
@@ -377,13 +377,13 @@
   {
     "load": {
       "key": "[",
-      "keyUp": "{",
+      "keyUp": "BracketLeft",
       "keyShift": "{",
       "keyCaps": "{"
     },
     "loadRu": {
       "key": "х",
-      "keyUp": "Х",
+      "keyUp": "BracketLeft",
       "keyShift": "Х",
       "keyCaps": "Х"
     },
@@ -392,13 +392,13 @@
   {
     "load": {
       "key": "]",
-      "keyUp": "}",
+      "keyUp": "BracketRight",
       "keyShift": "}",
       "keyCaps": "}"
     },
     "loadRu": {
       "key": "ъ",
-      "keyUp": "Ъ",
+      "keyUp": "BracketRight",
       "keyShift": "Ъ",
       "keyCaps": "Ъ"
     },
@@ -407,13 +407,13 @@
   {
     "load": {
       "key": "\\",
-      "keyUp": "|",
+      "keyUp": "Backslash",
       "keyShift": "|",
       "keyCaps": "\\"
     },
     "loadRu": {
       "key": "\\",
-      "keyUp": "/",
+      "keyUp": "Backslash",
       "keyShift": "/",
       "keyCaps": "\\"
     },
@@ -452,13 +452,13 @@
   {
     "load": {
       "key": "a",
-      "keyUp": "A",
+      "keyUp": "KeyA",
       "keyShift": "A",
       "keyCaps": "A"
     },
     "loadRu": {
       "key": "ф",
-      "keyUp": "Ф",
+      "keyUp": "KeyA",
       "keyShift": "Ф",
       "keyCaps": "Ф"
     },
@@ -467,13 +467,13 @@
   {
     "load": {
       "key": "s",
-      "keyUp": "S",
+      "keyUp": "KeyS",
       "keyShift": "S",
       "keyCaps": "S"
     },
     "loadRu": {
       "key": "ы",
-      "keyUp": "Ы",
+      "keyUp": "KeyS",
       "keyShift": "Ы",
       "keyCaps": "Ы"
     },
@@ -482,13 +482,13 @@
   {
     "load": {
       "key": "d",
-      "keyUp": "D",
+      "keyUp": "KeyD",
       "keyShift": "D",
       "keyCaps": "D"
     },
     "loadRu": {
       "key": "в",
-      "keyUp": "В",
+      "keyUp": "KeyD",
       "keyShift": "В",
       "keyCaps": "В"
     },
@@ -497,13 +497,13 @@
   {
     "load": {
       "key": "f",
-      "keyUp": "F",
+      "keyUp": "KeyF",
       "keyShift": "F",
       "keyCaps": "F"
     },
     "loadRu": {
       "key": "а",
-      "keyUp": "А",
+      "keyUp": "KeyF",
       "keyShift": "А",
       "keyCaps": "А"
     },
@@ -512,13 +512,13 @@
   {
     "load": {
       "key": "g",
-      "keyUp": "G",
+      "keyUp": "KeyG",
       "keyShift": "G",
       "keyCaps": "G"
     },
     "loadRu": {
       "key": "п",
-      "keyUp": "П",
+      "keyUp": "KeyG",
       "keyShift": "П",
       "keyCaps": "П"
     },
@@ -527,13 +527,13 @@
   {
     "load": {
       "key": "h",
-      "keyUp": "H",
+      "keyUp": "KeyH",
       "keyShift": "H",
       "keyCaps": "H"
     },
     "loadRu": {
       "key": "р",
-      "keyUp": "Р",
+      "keyUp": "KeyH",
       "keyShift": "Р",
       "keyCaps": "Р"
     },
@@ -542,13 +542,13 @@
   {
     "load": {
       "key": "j",
-      "keyUp": "J",
+      "keyUp": "KeyJ",
       "keyShift": "J",
       "keyCaps": "J"
     },
     "loadRu": {
       "key": "о",
-      "keyUp": "О",
+      "keyUp": "KeyJ",
       "keyShift": "О",
       "keyCaps": "О"
     },
@@ -557,13 +557,13 @@
   {
     "load": {
       "key": "k",
-      "keyUp": "K",
+      "keyUp": "KeyK",
       "keyShift": "K",
       "keyCaps": "K"
     },
     "loadRu": {
       "key": "л",
-      "keyUp": "Л",
+      "keyUp": "KeyK",
       "keyShift": "Л",
       "keyCaps": "Л"
     },
@@ -572,13 +572,13 @@
   {
     "load": {
       "key": "l",
-      "keyUp": "L",
+      "keyUp": "KeyL",
       "keyShift": "L",
       "keyCaps": "L"
     },
     "loadRu": {
       "key": "д",
-      "keyUp": "Д",
+      "keyUp": "KeyL",
       "keyShift": "Д",
       "keyCaps": "Д"
     },
@@ -587,13 +587,13 @@
   {
     "load": {
       "key": ";",
-      "keyUp": ":",
+      "keyUp": "Semicolon",
       "keyShift": ":",
       "keyCaps": ";"
     },
     "loadRu": {
       "key": "ж",
-      "keyUp": "Ж",
+      "keyUp": "Semicolon",
       "keyShift": "Ж",
       "keyCaps": "Ж"
     },
@@ -602,13 +602,13 @@
   {
     "load": {
       "key": "'",
-      "keyUp": "\"",
+      "keyUp": "Quote",
       "keyShift": "\"",
       "keyCaps": "'"
     },
     "loadRu": {
       "key": "э",
-      "keyUp": "Э",
+      "keyUp": "Quote",
       "keyShift": "Э",
       "keyCaps": "Э"
     },
@@ -632,13 +632,13 @@
   {
     "load": {
       "key": "Shift",
-      "keyUp": "Shift",
+      "keyUp": "ShiftLeft",
       "keyShift": "Shift",
       "keyCaps": "Shift"
     },
     "loadRu": {
       "key": "Shift",
-      "keyUp": "Shift",
+      "keyUp": "ShiftLeft",
       "keyShift": "Shift",
       "keyCaps": "Shift"
     },
@@ -647,13 +647,13 @@
   {
     "load": {
       "key": "z",
-      "keyUp": "Z",
+      "keyUp": "KeyZ",
       "keyShift": "Z",
       "keyCaps": "Z"
     },
     "loadRu": {
       "key": "я",
-      "keyUp": "Я",
+      "keyUp": "KeyZ",
       "keyShift": "Я",
       "keyCaps": "Я"
     },
@@ -662,13 +662,13 @@
   {
     "load": {
       "key": "x",
-      "keyUp": "X",
+      "keyUp": "KeyX",
       "keyShift": "X",
       "keyCaps": "X"
     },
     "loadRu": {
       "key": "ч",
-      "keyUp": "Ч",
+      "keyUp": "KeyX",
       "keyShift": "Ч",
       "keyCaps": "Ч"
     },
@@ -677,13 +677,13 @@
   {
     "load": {
       "key": "c",
-      "keyUp": "C",
+      "keyUp": "KeyC",
       "keyShift": "C",
       "keyCaps": "C"
     },
     "loadRu": {
       "key": "с",
-      "keyUp": "С",
+      "keyUp": "KeyC",
       "keyShift": "С",
       "keyCaps": "С"
     },
@@ -692,13 +692,13 @@
   {
     "load": {
       "key": "v",
-      "keyUp": "V",
+      "keyUp": "KeyV",
       "keyShift": "V",
       "keyCaps": "V"
     },
     "loadRu": {
       "key": "м",
-      "keyUp": "М",
+      "keyUp": "KeyV",
       "keyShift": "М",
       "keyCaps": "М"
     },
@@ -707,13 +707,13 @@
   {
     "load": {
       "key": "b",
-      "keyUp": "B",
+      "keyUp": "KeyB",
       "keyShift": "B",
       "keyCaps": "B"
     },
     "loadRu": {
       "key": "и",
-      "keyUp": "И",
+      "keyUp": "KeyB",
       "keyShift": "И",
       "keyCaps": "И"
     },
@@ -722,13 +722,13 @@
   {
     "load": {
       "key": "n",
-      "keyUp": "N",
+      "keyUp": "KeyN",
       "keyShift": "N",
       "keyCaps": "N"
     },
     "loadRu": {
       "key": "т",
-      "keyUp": "Т",
+      "keyUp": "KeyN",
       "keyShift": "Т",
       "keyCaps": "Т"
     },
@@ -737,13 +737,13 @@
   {
     "load": {
       "key": "m",
-      "keyUp": "M",
+      "keyUp": "KeyM",
       "keyShift": "M",
       "keyCaps": "M"
     },
     "loadRu": {
       "key": "ь",
-      "keyUp": "Ь",
+      "keyUp": "KeyM",
       "keyShift": "Ь",
       "keyCaps": "Ь"
     },
@@ -752,13 +752,13 @@
   {
     "load": {
       "key": ",",
-      "keyUp": "<",
+      "keyUp": "Comma",
       "keyShift": "<",
       "keyCaps": ","
     },
     "loadRu": {
       "key": "б",
-      "keyUp": "Б",
+      "keyUp": "Comma",
       "keyShift": "Б",
       "keyCaps": "Б"
     },
@@ -767,13 +767,13 @@
   {
     "load": {
       "key": ".",
-      "keyUp": ">",
+      "keyUp": "Period",
       "keyShift": ">",
       "keyCaps": "."
     },
     "loadRu": {
       "key": "ю",
-      "keyUp": "Ю",
+      "keyUp": "Period",
       "keyShift": "Ю",
       "keyCaps": "Ю"
     },
@@ -782,13 +782,13 @@
   {
     "load": {
       "key": "/",
-      "keyUp": "?",
+      "keyUp": "Slash",
       "keyShift": "?",
       "keyCaps": "/"
     },
     "loadRu": {
       "key": ".",
-      "keyUp": ",",
+      "keyUp": "Slash",
       "keyShift": ",",
       "keyCaps": "."
     },
@@ -797,13 +797,13 @@
   {
     "load": {
       "key": "⯅",
-      "keyUp": "⯅",
+      "keyUp": "ArrowUp",
       "keyShift": "⯅",
       "keyCaps": "⯅"
     },
     "loadRu": {
       "key": "⯅",
-      "keyUp": "⯅",
+      "keyUp": "ArrowUp",
       "keyShift": "⯅",
       "keyCaps": "⯅"
     },
@@ -812,13 +812,13 @@
   {
     "load": {
       "key": "Shift",
-      "keyUp": "Shift",
+      "keyUp": "ShiftRight",
       "keyShift": "Shift",
       "keyCaps": "Shift"
     },
     "loadRu": {
       "key": "Shift",
-      "keyUp": "Shift",
+      "keyUp": "ShiftRight",
       "keyShift": "Shift",
       "keyCaps": "Shift"
     },
@@ -827,13 +827,13 @@
   {
     "load": {
       "key": "Ctrl",
-      "keyUp": "Ctrl",
+      "keyUp": "ControlLeft",
       "keyShift": "Ctrl",
       "keyCaps": "Ctrl"
     },
     "loadRu": {
       "key": "Ctrl",
-      "keyUp": "Ctrl",
+      "keyUp": "ControlLeft",
       "keyShift": "Ctrl",
       "keyCaps": "Ctrl"
     },
@@ -857,13 +857,13 @@
   {
     "load": {
       "key": "Alt",
-      "keyUp": "Alt",
+      "keyUp": "AltLeft",
       "keyShift": "Alt",
       "keyCaps": "Alt"
     },
     "loadRu": {
       "key": "Alt",
-      "keyUp": "Alt",
+      "keyUp": "AltLeft",
       "keyShift": "Alt",
       "keyCaps": "Alt"
     },
@@ -872,13 +872,13 @@
   {
     "load": {
       "key": " ",
-      "keyUp": " ",
+      "keyUp": "Space",
       "keyShift": " ",
       "keyCaps": " "
     },
     "loadRu": {
       "key": " ",
-      "keyUp": " ",
+      "keyUp": "Space",
       "keyShift": " ",
       "keyCaps": " "
     },
@@ -887,13 +887,13 @@
   {
     "load": {
       "key": "alt",
-      "keyUp": "alt",
+      "keyUp": "AltRight",
       "keyShift": "alt",
       "keyCaps": "alt"
     },
     "loadRu": {
       "key": "alt",
-      "keyUp": "alt",
+      "keyUp": "AltRight",
       "keyShift": "alt",
       "keyCaps": "alt"
     },
@@ -902,13 +902,13 @@
   {
     "load": {
       "key": "⯇",
-      "keyUp": "⯇",
+      "keyUp": "ArrowLeft",
       "keyShift": "⯇",
       "keyCaps": "⯇"
     },
     "loadRu": {
       "key": "⯇",
-      "keyUp": "⯇",
+      "keyUp": "ArrowLeft",
       "keyShift": "⯇",
       "keyCaps": "⯇"
     },
@@ -917,13 +917,13 @@
   {
     "load": {
       "key": "⯆",
-      "keyUp": "⯆",
+      "keyUp": "ArrowDown",
       "keyShift": "⯆",
       "keyCaps": "⯆"
     },
     "loadRu": {
       "key": "⯆",
-      "keyUp": "⯆",
+      "keyUp": "ArrowDown",
       "keyShift": "⯆",
       "keyCaps": "⯆"
     },
@@ -932,13 +932,13 @@
   {
     "load": {
       "key": "⯈",
-      "keyUp": "⯈",
+      "keyUp": "ArrowRight",
       "keyShift": "⯈",
       "keyCaps": "⯈"
     },
     "loadRu": {
       "key": "⯈",
-      "keyUp": "⯈",
+      "keyUp": "ArrowRight",
       "keyShift": "⯈",
       "keyCaps": "⯈"
     },
@@ -947,13 +947,13 @@
   {
     "load": {
       "key": "Ctrl",
-      "keyUp": "Ctrl",
+      "keyUp": "ControlRight",
       "keyShift": "Ctrl",
       "keyCaps": "Ctrl"
     },
     "loadRu": {
       "key": "Ctrl",
-      "keyUp": "Ctrl",
+      "keyUp": "ControlRight",
       "keyShift": "Ctrl",
       "keyCaps": "Ctrl"
     },
