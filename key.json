@@ -886,16 +886,16 @@
   },
   {
     "load": {
-      "key": "alt",
+      "key": "Alt",
       "keyUp": "AltRight",
-      "keyShift": "alt",
-      "keyCaps": "alt"
+      "keyShift": "Alt",
+      "keyCaps": "Alt"
     },
     "loadRu": {
-      "key": "alt",
+      "key": "Alt",
       "keyUp": "AltRight",
-      "keyShift": "alt",
-      "keyCaps": "alt"
+      "keyShift": "Alt",
+      "keyCaps": "Alt"
     },
     "AltRight": "Alt"
   },

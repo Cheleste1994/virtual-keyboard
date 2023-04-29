@@ -60,17 +60,12 @@
   background: #79aa89;
 }
 
+.key:active {
+  background-color: #2cfd72;
+}
 
 .key:nth-of-type(14) {
   grid-column: 14 / -1;
-  background-color: #222222;
-}
-
-.key:nth-of-type(15) {
-  background-color: #222222;
-}
-
-.key:nth-of-type(29) {
   background-color: #222222;
 }
 
@@ -94,6 +89,8 @@
   background-color: #222222;
 }
 
+.key:nth-of-type(15),
+.key:nth-of-type(29),
 .key:nth-of-type(54),
 .key:nth-of-type(56),
 .key:nth-of-type(57),

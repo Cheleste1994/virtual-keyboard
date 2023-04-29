@@ -121,30 +121,6 @@ async function addKeyboard(keyboard) {
   langActive();
 }
 
-const arrEntry = [];
-
-function stopDefAction(evt) {
-  evt.preventDefault();
-}
-
-async function addDataKey(event) {
-  const imgHelp = './key.json';
-  const res = await fetch(imgHelp);
-  const dataKey = await res.json();
-  const textareaEntry = document.querySelector('#textarea');
-  const eventCode = event.code;
-  if (dataKey[64][eventCode]) {
-    arrEntry.push(dataKey[64][eventCode]);
-    window.addEventListener('keydown', stopDefAction);
-  } else if (dataKey[65][eventCode]) {
-    arrEntry.push(dataKey[64][eventCode]);
-    window.addEventListener('keydown', stopDefAction);
-  } else {
-    arrEntry.push(dataKey[64][eventCode] || dataKey[65][eventCode] ? '' : event.key);
-  }
-  textareaEntry.innerHTML = arrEntry.join('');
-}
-
 /* start key click */
 
 function keyActive(event) {
@@ -170,6 +146,34 @@ function keyNoActive(event) {
 }
 
 /* end key click */
+
+/* start position cursor */
+
+function getCursorPosition() {
+  const textarea = document.querySelector('#textarea');
+  let caretPos = 0;
+  if (document.selection) {
+    textarea.focus();
+    const sel = document.selection.createRange();
+    sel.moveStart('character', -textarea.value.length);
+    caretPos = sel.text.length;
+  } else if (textarea.selectionStart || textarea.selectionStart === '0') {
+    caretPos = textarea.selectionStart;
+  }
+  return caretPos;
+}
+
+/* end position cursor */
+
+/* start Tab click */
+
+function tabClick() {
+  const textarea = document.querySelector('#textarea');
+  const position = getCursorPosition();
+  textarea.setRangeText('\t', position, position);
+}
+
+/* end Tab click */
 
 /* start shift click */
 
@@ -248,6 +252,58 @@ function ctrlActive() {
 
 /* end ctrl + alt click */
 
+/* start Backspace click */
+
+function backspaceClick() {
+  const textarea = document.querySelector('#textarea');
+  const position = getCursorPosition();
+  if (!position) { return; }
+  textarea.setRangeText('', position - 1, position);
+}
+
+/* end Backspace click */
+
+/* start Delete click */
+
+function deleteClick() {
+  const textarea = document.querySelector('#textarea');
+  const position = getCursorPosition();
+  if (position === textarea.value.length) { return; }
+  textarea.setRangeText('', position, position + 1);
+}
+
+/* end Delete click */
+
+/* start Enter click */
+
+function enterClick() {
+  const textarea = document.querySelector('#textarea');
+  const position = getCursorPosition();
+  textarea.setRangeText('\n', position, position);
+}
+
+/* end Enter click */
+
+/* start Arrow click */
+
+function arrowUpClick() {
+  const textarea = document.querySelector('#textarea');
+  const position = getCursorPosition();
+  // textarea.setRangeText('\n', position, position);
+  console.log(event)
+}
+
+/* end Enter click */
+
+async function addDataKey(event) {
+  const imgHelp = './key.json';
+  const res = await fetch(imgHelp);
+  const dataKey = await res.json();
+  const textarea = document.querySelector('#textarea');
+  getCursorPosition();
+  textarea.value += event.key;
+}
+
 /* start switch key */
 
 function switchKeyDown(event) {
@@ -264,7 +320,32 @@ function switchKeyDown(event) {
     case event.ctrlKey && event.altKey:
       ctrlActive();
       break;
+    case event.ctrlKey || event.altKey:
+      event.preventDefault();
+      break;
+    case event.key === 'Tab':
+      tabClick(event);
+      event.preventDefault();
+      break;
+    case event.key === 'Backspace':
+      backspaceClick(event);
+      event.preventDefault();
+      break;
+    case event.key === 'Delete':
+      deleteClick(event);
+      event.preventDefault();
+      break;
+    case event.key === 'Enter':
+      enterClick(event);
+      event.preventDefault();
+      break;
+    case event.key === 'ArrowUp':
+      arrowUpClick(event);
+      event.preventDefault();
+      break;
     default:
+      addDataKey(event);
+      event.preventDefault();
   }
 }
 
@@ -276,7 +357,6 @@ function switchKeyUp(event) {
     case event.key === 'Shift' && !isCaps:
       shiftActive(event);
       break;
-
     default:
   }
 }
@@ -284,7 +364,8 @@ function switchKeyUp(event) {
 /* end switch key */
 
 window.addEventListener('keydown', (event) => {
-  addDataKey(event);
+  const textarea = document.querySelector('#textarea');
+  textarea.focus();
   keyActive(event);
   switchKeyDown(event);
 });
@@ -293,7 +374,3 @@ window.addEventListener('keyup', (event) => {
   keyNoActive(event);
   switchKeyUp(event);
 });
-
-// window.addEventListener('mousedown', (event) => {
-//   console.log(event)
-// })
