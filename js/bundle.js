@@ -121,32 +121,6 @@ async function addKeyboard(keyboard) {
   langActive();
 }
 
-/* start key click */
-
-function keyActive(event) {
-  const keyEng = document.querySelectorAll('.key__eng');
-  const keyRu = document.querySelectorAll('.key__ru');
-  for (let i = 0; i < keyEng.length; i += 1) {
-    if (keyEng[i].children[1].innerText === event.code) {
-      keyEng[i].classList.add('key-active');
-      keyRu[i].classList.add('key-active');
-    }
-  }
-}
-
-function keyNoActive(event) {
-  const keyEng = document.querySelectorAll('.key__eng');
-  const keyRu = document.querySelectorAll('.key__ru');
-  for (let i = 0; i < keyEng.length; i += 1) {
-    if (keyEng[i].children[1].innerText === event.code) {
-      keyEng[i].classList.remove('key-active');
-      keyRu[i].classList.remove('key-active');
-    }
-  }
-}
-
-/* end key click */
-
 /* start position cursor */
 
 function getCursorPosition() {
@@ -286,28 +260,61 @@ function enterClick() {
 
 /* start Arrow click */
 
-function arrowUpClick() {
+function arrowClick(event) {
   const textarea = document.querySelector('#textarea');
   const position = getCursorPosition();
-  // textarea.setRangeText('\n', position, position);
-  console.log(event)
+  if (event.key === 'ArrowUp') {
+    textarea.setRangeText('⯅', position, position);
+  } else if (event.key === 'ArrowLeft') {
+    textarea.setRangeText('⯇', position, position);
+  } else if (event.key === 'ArrowDown') {
+    textarea.setRangeText('⯆', position, position);
+  } else if (event.key === 'ArrowRight') {
+    textarea.setRangeText('⯈', position, position);
+  }
 }
 
-/* end Enter click */
+/* end Arrow click */
 
-async function addDataKey(event) {
-  const imgHelp = './key.json';
-  const res = await fetch(imgHelp);
-  const dataKey = await res.json();
+/* start Space click */
+
+function spaceClick() {
   const textarea = document.querySelector('#textarea');
-  getCursorPosition();
-  textarea.value += event.key;
+  const position = getCursorPosition();
+  textarea.setRangeText(' ', position, position);
+}
+
+/* end Space click */
+
+function addDataKey(event, indexKey) {
+  const textarea = document.querySelector('#textarea');
+  const keyEng = document.querySelectorAll('.key__eng');
+  const enDown = document.querySelectorAll('.key__eng .key-down');
+  const enShift = document.querySelectorAll('.key__eng .key-shift');
+  const enCaps = document.querySelectorAll('.key__eng .key-caps');
+  const keyRu = document.querySelectorAll('.key__ru');
+  const ruDown = document.querySelectorAll('.key__ru .key-down');
+  const ruShift = document.querySelectorAll('.key__ru .key-shift');
+  const ruCaps = document.querySelectorAll('.key__ru .key-caps');
+  if (keyEng[indexKey].style.display !== 'none' && enDown[indexKey].style.display !== 'none') {
+    textarea.value += enDown[indexKey].innerText;
+  } else if (keyEng[indexKey].style.display !== 'none' && enShift[indexKey].style.display !== 'none') {
+    textarea.value += enShift[indexKey].innerText;
+  } else if (keyEng[indexKey].style.display !== 'none' && enCaps[indexKey].style.display !== 'none') {
+    textarea.value += enCaps[indexKey].innerText;
+  } else if (keyRu[indexKey].style.display !== 'none' && ruDown[indexKey].style.display !== 'none') {
+    textarea.value += ruDown[indexKey].innerText;
+  } else if (keyRu[indexKey].style.display !== 'none' && ruShift[indexKey].style.display !== 'none') {
+    textarea.value += ruShift[indexKey].innerText;
+  } else if (keyRu[indexKey].style.display !== 'none' && ruCaps[indexKey].style.display !== 'none') {
+    textarea.value += ruCaps[indexKey].innerText;
+  }
 }
 
 /* start switch key */
 
-function switchKeyDown(event) {
-  switch (event.isTrusted) {
+function switchKeyDown(event, index) {
+  switch (event.isTrusted || event.click) {
     case event.key === 'Shift' && isCaps:
       shiftActive(event);
       break;
@@ -320,33 +327,30 @@ function switchKeyDown(event) {
     case event.ctrlKey && event.altKey:
       ctrlActive();
       break;
-    case event.ctrlKey || event.altKey:
-      event.preventDefault();
+    case event.ctrlKey || event.altKey || (event.key === 'Ctrl' && event.click):
       break;
     case event.key === 'Tab':
       tabClick(event);
-      event.preventDefault();
       break;
     case event.key === 'Backspace':
       backspaceClick(event);
-      event.preventDefault();
       break;
-    case event.key === 'Delete':
+    case event.key === 'Delete' || event.key === 'Del':
       deleteClick(event);
-      event.preventDefault();
       break;
     case event.key === 'Enter':
       enterClick(event);
-      event.preventDefault();
       break;
-    case event.key === 'ArrowUp':
-      arrowUpClick(event);
-      event.preventDefault();
+    case event.key === 'ArrowUp' || event.key === 'ArrowLeft' || event.key === 'ArrowDown' || event.key === 'ArrowRight':
+      arrowClick(event);
+      break;
+    case event.key === ' ':
+      spaceClick(event);
       break;
     default:
-      addDataKey(event);
-      event.preventDefault();
+      addDataKey(event, index);
   }
+  if (!event.click) { event.preventDefault(); }
 }
 
 function switchKeyUp(event) {
@@ -363,14 +367,67 @@ function switchKeyUp(event) {
 
 /* end switch key */
 
+/* start key click */
+
+function keyActive(event) {
+  const keyEng = document.querySelectorAll('.key__eng');
+  const keyRu = document.querySelectorAll('.key__ru');
+  for (let i = 0; i < keyEng.length; i += 1) {
+    if (keyEng[i].children[1].innerText === event.code) {
+      keyEng[i].classList.add('key-active');
+      keyRu[i].classList.add('key-active');
+      switchKeyDown(event, i);
+    }
+  }
+}
+
+function keyNoActive(event) {
+  const keyEng = document.querySelectorAll('.key__eng');
+  const keyRu = document.querySelectorAll('.key__ru');
+  for (let i = 0; i < keyEng.length; i += 1) {
+    if (keyEng[i].children[1].innerText === event.code) {
+      keyEng[i].classList.remove('key-active');
+      keyRu[i].classList.remove('key-active');
+    }
+  }
+}
+
+/* end key click */
+
 window.addEventListener('keydown', (event) => {
   const textarea = document.querySelector('#textarea');
   textarea.focus();
   keyActive(event);
-  switchKeyDown(event);
 });
 
 window.addEventListener('keyup', (event) => {
   keyNoActive(event);
   switchKeyUp(event);
+});
+
+function clickTargetKey(event) {
+  return event.target.innerText;
+}
+
+function searchIndex(event) {
+  const key = document.querySelectorAll('.key');
+  for (let i = 0; i < key.length; i += 1) {
+    if (key[i].innerText === event.target.innerText) {
+      return i;
+    }
+  }
+  return false;
+}
+
+document.querySelector('.keyboard').addEventListener('click', (event) => {
+  const textarea = document.querySelector('#textarea');
+  const obj = {
+    key: clickTargetKey(event),
+    click: true,
+    index: searchIndex(event),
+  };
+  if (obj.index) {
+    textarea.focus();
+    switchKeyDown(obj, obj.index);
+  }
 });
