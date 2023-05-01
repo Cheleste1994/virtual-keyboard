@@ -157,11 +157,6 @@ function shiftActive(event) {
   const keyDown = document.querySelectorAll('.key-down');
   const keyShift = document.querySelectorAll('.key-shift');
   const keyCaps = document.querySelectorAll('.key-caps');
-  // for (let i = 0; i < keyDown.length; i += 1) {
-  //   keyDown[i].style.display = 'none';
-  //   keyShift[i].style.display = 'block';
-  //   keyCaps[i].style.display = 'none';
-  // }
   if (event.key === 'Shift' && isCaps) {
     for (let i = 0; i < keyDown.length; i += 1) {
       keyDown[i].style.display = 'none';
