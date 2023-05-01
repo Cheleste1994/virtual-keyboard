@@ -10,7 +10,7 @@
 .title {
   text-align: center;
   font-size: 16px;
-  color: rgba(101,134,177,0.8);
+  color: rgba(101, 134, 177, 0.8);
 }
 
 .title__h1 {
@@ -122,8 +122,8 @@
 .key-up,
 .key-shift,
 .key-caps {
-display: none;
-margin: auto auto;
+  display: none;
+  margin: auto auto;
 }
 
 .key__ru {
