@@ -383,7 +383,7 @@ function keyActive(event) {
   const keyRu = document.querySelectorAll('.key__ru');
   const key = document.querySelectorAll('.key');
   for (let i = 0; i < keyEng.length; i += 1) {
-    if (keyEng[i].children[1].innerText === event.code) {
+    if (keyEng[i].children[1].innerText === event.code || (keyEng[i].children[1].innerText === 'Del' && event.code === 'Delete')) {
       key[i].classList.add('key-active');
       keyEng[i].classList.add('key-active');
       keyRu[i].classList.add('key-active');
@@ -397,7 +397,7 @@ function keyNoActive(event) {
   const keyRu = document.querySelectorAll('.key__ru');
   const key = document.querySelectorAll('.key');
   for (let i = 0; i < keyEng.length; i += 1) {
-    if (keyEng[i].children[1].innerText === event.code) {
+    if (keyEng[i].children[1].innerText === event.code || (keyEng[i].children[1].innerText === 'Del' && event.code === 'Delete')) {
       key[i].classList.remove('key-active');
       keyEng[i].classList.remove('key-active');
       keyRu[i].classList.remove('key-active');
