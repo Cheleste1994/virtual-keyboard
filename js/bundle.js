@@ -25,6 +25,8 @@ function addFrame() {
       case i === 2:
         addDiv.className = 'body-entry';
         addTextarea.id = 'textarea';
+        addTextarea.rows = 5;
+        addTextarea.cols = 50;
         addTextarea.className = 'body-entry__textarea';
         addTextarea.setAttribute('autofocus', '');
         addDiv.appendChild(addTextarea);
@@ -144,6 +146,7 @@ function getCursorPosition() {
 function tabClick() {
   const textarea = document.querySelector('#textarea');
   const position = getCursorPosition();
+  textarea.focus();
   textarea.setRangeText('\t', position, position, 'end');
 }
 
@@ -157,11 +160,6 @@ function shiftActive(event) {
   const keyDown = document.querySelectorAll('.key-down');
   const keyShift = document.querySelectorAll('.key-shift');
   const keyCaps = document.querySelectorAll('.key-caps');
-  // for (let i = 0; i < keyDown.length; i += 1) {
-  //   keyDown[i].style.display = 'none';
-  //   keyShift[i].style.display = 'block';
-  //   keyCaps[i].style.display = 'none';
-  // }
   if (event.key === 'Shift' && isCaps) {
     for (let i = 0; i < keyDown.length; i += 1) {
       keyDown[i].style.display = 'none';
@@ -287,6 +285,7 @@ function arrowClick(event) {
 function spaceClick() {
   const textarea = document.querySelector('#textarea');
   const position = getCursorPosition();
+  textarea.focus();
   textarea.setRangeText(' ', position, position, 'end');
 }
 
@@ -321,6 +320,8 @@ function addDataKey(event, indexKey) {
 /* start switch key */
 
 function switchKeyDown(event, index) {
+  const textarea = document.querySelector('#textarea');
+  textarea.focus();
   switch (event.isTrusted || event.click) {
     case event.key === 'Shift' && isCaps:
       shiftActive(event);
@@ -335,7 +336,7 @@ function switchKeyDown(event, index) {
     case event.ctrlKey && event.altKey:
       ctrlActive();
       break;
-    case event.ctrlKey || event.altKey || event.key === 'Ctrl' || event.key === 'Alt' || event.key === 'Win':
+    case event.code === 'ControlLeft' || event.code === 'AltLeft' || event.code === 'ControlRight' || event.code === 'AltRight' || event.key === 'Win':
       break;
     case event.key === 'Tab':
       tabClick(event);
@@ -380,8 +381,10 @@ function switchKeyUp(event) {
 function keyActive(event) {
   const keyEng = document.querySelectorAll('.key__eng');
   const keyRu = document.querySelectorAll('.key__ru');
+  const key = document.querySelectorAll('.key');
   for (let i = 0; i < keyEng.length; i += 1) {
     if (keyEng[i].children[1].innerText === event.code) {
+      key[i].classList.add('key-active');
       keyEng[i].classList.add('key-active');
       keyRu[i].classList.add('key-active');
       switchKeyDown(event, i);
@@ -392,8 +395,10 @@ function keyActive(event) {
 function keyNoActive(event) {
   const keyEng = document.querySelectorAll('.key__eng');
   const keyRu = document.querySelectorAll('.key__ru');
+  const key = document.querySelectorAll('.key');
   for (let i = 0; i < keyEng.length; i += 1) {
     if (keyEng[i].children[1].innerText === event.code) {
+      key[i].classList.remove('key-active');
       keyEng[i].classList.remove('key-active');
       keyRu[i].classList.remove('key-active');
     }
@@ -440,11 +445,13 @@ window.addEventListener('keyup', (event) => {
 });
 
 function clickTargetKey(event) {
+  if (!event) { return false; }
   return event.target.innerText;
 }
 
 function searchIndex(event) {
   const key = document.querySelectorAll('.key');
+  if (!event) { return false; }
   for (let i = 0; i < key.length; i += 1) {
     if (key[i].innerText === event.target.innerText) {
       return i;
@@ -455,6 +462,7 @@ function searchIndex(event) {
 
 function searchCode(event) {
   const keyCode = document.querySelectorAll('.key-up');
+  if (!event) { return false; }
   for (let i = 0; i < keyCode.length; i += 1) {
     if (event.target.children[1]) {
       if (keyCode[i].innerText === event.target.children[1].innerText) {
@@ -467,6 +475,8 @@ function searchCode(event) {
   return false;
 }
 
+let eventObj = false;
+
 document.querySelector('.keyboard').addEventListener('mousedown', (event) => {
   const obj = {
     key: clickTargetKey(event),
@@ -474,17 +484,18 @@ document.querySelector('.keyboard').addEventListener('mousedown', (event) => {
     index: searchIndex(event),
     code: searchCode(event),
   };
+  eventObj = event;
   if (obj.index || obj.index === 0) {
     keyActive(obj);
   }
 });
 
-document.querySelector('.keyboard').addEventListener('mouseup', (event) => {
+document.querySelector('.body').addEventListener('mouseup', () => {
   const obj = {
-    key: clickTargetKey(event),
+    key: clickTargetKey(eventObj),
     click: true,
-    index: searchIndex(event),
-    code: searchCode(event),
+    index: searchIndex(eventObj),
+    code: searchCode(eventObj),
   };
   if (obj.index || obj.index === 0) {
     if (obj.key !== 'CapsLock') { keyNoActive(obj); }
