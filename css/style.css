@@ -12,12 +12,28 @@
 
 @font-face {
   font-family: 'Arial-MT';
-  src: url("../assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+  src: url("../fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
  }
 
+ @font-face {
+  font-family: 'Trebuchet MS';
+  src: url("../fonts/trebuchetms.ttf"); /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+  font-family: 'Monospace';
+  src: url("../fonts/MonospaceBold.ttf");
+  src: url("../fonts/MonospaceOblique.ttf");
+  src: url("../fonts/MonospaceRegular.ttf");
+ }
+
+ @font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Sansserif.ttf");
+ }
 
 .body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Trebuchet MS", "Helvetica", 'Monospace', sans-serif;
 
   margin: 0;
   padding: 0;
