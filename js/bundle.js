@@ -438,9 +438,12 @@ function capsActive(event) {
 
 window.addEventListener('keydown', (event) => {
   const textarea = document.querySelector('#textarea');
-  if (event.code === 'MetaLeft' || event.code === 'MetaRight' || event.key === 'Meta') { event.preventDefault(); }
-  textarea.focus();
-  keyActive(event);
+  if (event.code === 'MetaLeft' || event.code === 'MetaRight' || event.key === 'Meta') {
+    event.preventDefault();
+  } else {
+    textarea.focus();
+    keyActive(event);
+  }
 });
 
 window.addEventListener('keyup', (event) => {
