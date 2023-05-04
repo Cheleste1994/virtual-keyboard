@@ -338,6 +338,8 @@ function switchKeyDown(event, index) {
       break;
     case event.code === 'ControlLeft' || event.code === 'AltLeft' || event.code === 'ControlRight' || event.code === 'AltRight' || event.key === 'Win':
       break;
+    case event.code === 'End':
+      break;
     case event.code === 'MetaLeft' || event.code === 'MetaRight' || event.key === 'Meta':
       event.preventDefault();
       break;

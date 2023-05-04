@@ -841,18 +841,18 @@
   },
   {
     "load": {
-      "key": "Win",
-      "keyUp": "Win",
-      "keyShift": "Win",
-      "keyCaps": "Win"
+      "key": "End",
+      "keyUp": "End",
+      "keyShift": "End",
+      "keyCaps": "End"
     },
     "loadRu": {
-      "key": "Win",
-      "keyUp": "Win",
-      "keyShift": "Win",
-      "keyCaps": "Win"
+      "key": "End",
+      "keyUp": "End",
+      "keyShift": "End",
+      "keyCaps": "End"
     },
-    "MetaLeft": "Meta"
+    "MetaLeft": "End"
   },
   {
     "load": {
