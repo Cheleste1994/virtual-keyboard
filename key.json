@@ -796,16 +796,16 @@
   },
   {
     "load": {
-      "key": "⯅",
+      "key": "↑",
       "keyUp": "ArrowUp",
-      "keyShift": "⯅",
-      "keyCaps": "⯅"
+      "keyShift": "↑",
+      "keyCaps": "↑"
     },
     "loadRu": {
-      "key": "⯅",
+      "key": "↑",
       "keyUp": "ArrowUp",
-      "keyShift": "⯅",
-      "keyCaps": "⯅"
+      "keyShift": "↑",
+      "keyCaps": "↑"
     },
     "ArrowUp": "ArrowUp"
   },
@@ -901,46 +901,46 @@
   },
   {
     "load": {
-      "key": "⯇",
+      "key": "←",
       "keyUp": "ArrowLeft",
-      "keyShift": "⯇",
-      "keyCaps": "⯇"
+      "keyShift": "←",
+      "keyCaps": "←"
     },
     "loadRu": {
-      "key": "⯇",
+      "key": "←",
       "keyUp": "ArrowLeft",
-      "keyShift": "⯇",
-      "keyCaps": "⯇"
+      "keyShift": "←",
+      "keyCaps": "←"
     },
     "ArrowLeft": "ArrowLeft"
   },
   {
     "load": {
-      "key": "⯆",
+      "key": "↓",
       "keyUp": "ArrowDown",
-      "keyShift": "⯆",
-      "keyCaps": "⯆"
+      "keyShift": "↓",
+      "keyCaps": "↓"
     },
     "loadRu": {
-      "key": "⯆",
+      "key": "↓",
       "keyUp": "ArrowDown",
-      "keyShift": "⯆",
-      "keyCaps": "⯆"
+      "keyShift": "↓",
+      "keyCaps": "↓"
     },
     "ArrowDown": "ArrowDown"
   },
   {
     "load": {
-      "key": "⯈",
+      "key": "→",
       "keyUp": "ArrowRight",
-      "keyShift": "⯈",
-      "keyCaps": "⯈"
+      "keyShift": "→",
+      "keyCaps": "→"
     },
     "loadRu": {
-      "key": "⯈",
+      "key": "→",
       "keyUp": "ArrowRight",
-      "keyShift": "⯈",
-      "keyCaps": "⯈"
+      "keyShift": "→",
+      "keyCaps": "→"
     },
     "ArrowRight": "ArrowRight"
   },
@@ -962,10 +962,10 @@
   {
      "Tab": "\t",
      "Enter": "\n",
-    "ArrowUp": "▲",
-    "ArrowLeft": "◄",
-    "ArrowDown": "▼",
-    "ArrowRight": "►"
+    "ArrowUp": "↑",
+    "ArrowLeft": "←",
+    "ArrowDown": "↓",
+    "ArrowRight": "→"
   },
   {
     "Backspace": "Backspace",
