@@ -962,10 +962,10 @@
   {
      "Tab": "\t",
      "Enter": "\n",
-    "ArrowUp": "⯅",
-    "ArrowLeft": "⯇",
-    "ArrowDown": "⯆",
-    "ArrowRight": "⯈"
+    "ArrowUp": "▲",
+    "ArrowLeft": "◄",
+    "ArrowDown": "▼",
+    "ArrowRight": "►"
   },
   {
     "Backspace": "Backspace",

@@ -268,13 +268,13 @@ function arrowClick(event) {
   const textarea = document.querySelector('#textarea');
   const position = getCursorPosition();
   if (event.key === 'ArrowUp') {
-    textarea.setRangeText('⯅', position, position, 'end');
+    textarea.setRangeText('▲', position, position, 'end');
   } else if (event.key === 'ArrowLeft') {
-    textarea.setRangeText('⯇', position, position, 'end');
+    textarea.setRangeText('◄', position, position, 'end');
   } else if (event.key === 'ArrowDown') {
-    textarea.setRangeText('⯆', position, position, 'end');
+    textarea.setRangeText('▼', position, position, 'end');
   } else if (event.key === 'ArrowRight') {
-    textarea.setRangeText('⯈', position, position, 'end');
+    textarea.setRangeText('►', position, position, 'end');
   }
 }
 
