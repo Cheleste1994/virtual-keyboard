@@ -21,7 +21,7 @@
  }
 
  @font-face {
-  font-family: 'Monospace';
+  font-family: 'monospace';
   src: url("../fonts/MonospaceBold.ttf");
   src: url("../fonts/MonospaceOblique.ttf");
   src: url("../fonts/MonospaceRegular.ttf");
@@ -33,7 +33,7 @@
  }
 
 .body {
-  font-family: "Trebuchet MS", "Helvetica", 'Monospace', sans-serif;
+  font-family: "Trebuchet MS", "Helvetica", 'monospace', sans-serif;
 
   margin: 0;
   padding: 0;
@@ -137,6 +137,7 @@
 .key:nth-of-type(62),
 .key:nth-of-type(63),
 .key:nth-of-type(64) {
+  font-family: monospace, monospace;
   background-color: #222222;
 }
 
