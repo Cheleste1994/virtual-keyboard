@@ -338,6 +338,9 @@ function switchKeyDown(event, index) {
       break;
     case event.code === 'ControlLeft' || event.code === 'AltLeft' || event.code === 'ControlRight' || event.code === 'AltRight' || event.key === 'Win':
       break;
+    case event.code === 'MetaLeft' || event.code === 'MetaRight' || event.key === 'Meta':
+      event.preventDefault();
+      break;
     case event.key === 'Tab':
       tabClick(event);
       break;
@@ -435,6 +438,7 @@ function capsActive(event) {
 
 window.addEventListener('keydown', (event) => {
   const textarea = document.querySelector('#textarea');
+  if (event.code === 'MetaLeft' || event.code === 'MetaRight' || event.key === 'Meta') { event.preventDefault(); }
   textarea.focus();
   keyActive(event);
 });
