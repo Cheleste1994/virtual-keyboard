@@ -1,0 +1,189 @@
+/*
+@font-face {
+  font-family: 'owfont';
+  src: url('../fonts/owfont-regular.eot?v=1.0.0');
+  src: url('../fonts/owfont-regular.eot?#iefix&v=1.0.0') format('embedded-opentype'),
+	   url('../fonts/owfont-regular.woff') format('woff'),
+	   url('../fonts/owfont-regular.ttf') format('truetype'),
+	   url('../fonts/owfont-regular.svg#owf-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Arial-MT';
+  src: url("../fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+  font-family: 'Trebuchet MS';
+  src: url("../fonts/trebuchetms.ttf"); /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+  font-family: 'monospace';
+  src: url("../fonts/MonospaceBold.ttf");
+  src: url("../fonts/MonospaceOblique.ttf");
+  src: url("../fonts/MonospaceRegular.ttf");
+ }
+
+ @font-face {
+  font-family: 'arial curive';
+  src: url("../fonts/arialcurive.otf");
+ }
+
+.body {
+  font-family: "Trebuchet MS", "Helvetica", 'arialcurive', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(101, 134, 177, 0.8);
+}
+
+.title__h1 {
+  margin: 10px 0;
+}
+
+.body-entry {
+  text-align: center;
+}
+
+.body-entry__textarea {
+  width: 700px;
+  height: 200px;
+  font-size: 18px;
+  color: #444444;
+}
+
+.keyboard {
+  margin: 0 auto;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(15, 40px);
+  grid-template-rows: repeat(5, 40px);
+  justify-content: center;
+  justify-items: center;
+
+  align-items: center;
+  background: #888888;
+  border: 3px solid #222222;
+  border-radius: 5px;
+  gap: 6px;
+  padding: 6px 0;
+}
+
+.key {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: #444444;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none
+}
+
+.key:hover {
+  background: #79aa89;
+}
+
+.key:active {
+  background-color: #2cfd72;
+}
+
+.key:nth-of-type(14) {
+  grid-column: 14 / -1;
+  background-color: #222222;
+}
+
+.key:nth-of-type(30) {
+  grid-column: 1 / 3;
+  background-color: #222222;
+}
+
+.key:nth-of-type(42) {
+  grid-column: 14 / -1;
+  background-color: #222222;
+}
+
+.key:nth-of-type(43) {
+  grid-column: 1 / 3;
+  background-color: #222222;
+}
+
+.key:nth-of-type(55) {
+  grid-column: 14 / -1;
+  background-color: #222222;
+}
+
+.key:nth-of-type(15),
+.key:nth-of-type(29),
+.key:nth-of-type(54),
+.key:nth-of-type(56),
+.key:nth-of-type(57),
+.key:nth-of-type(58),
+.key:nth-of-type(60),
+.key:nth-of-type(61),
+.key:nth-of-type(62),
+.key:nth-of-type(63),
+.key:nth-of-type(64) {
+  background-color: #222222;
+}
+
+.key:nth-of-type(59) {
+  grid-column: 4 / 11;
+}
+
+.key__eng {
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: all 0.3s;
+}
+
+.key-down {
+  display: block;
+  margin: auto auto;
+}
+
+.key-up,
+.key-shift,
+.key-caps {
+  display: none;
+  margin: auto auto;
+}
+
+.key__ru {
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: all 0.3s;
+}
+
+
+.key-active {
+  border-radius: 50%;
+  background-color: #2cfd72;
+}
+
+.system {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.switch {
+  text-align: center;
+}
+
